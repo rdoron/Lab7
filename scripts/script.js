@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
       if (window.location.hash != ""){ 
 
-        window.history.pushState({page_id: 0}, "home", window.origin + "/Lab7/");
+        window.history.pushState({page_id: 0}, "homePage", window.origin + "/Lab7/");
         setState(); 
       }
     });
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
  
       if (window.location.hash != "#settings"){ 
        
-        window.history.pushState({page_id: 2}, "setting", "#settings"); 
+        window.history.pushState({page_id: 2}, "settingsPage", "#settings"); 
         setState(); 
       }
     });
