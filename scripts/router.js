@@ -36,28 +36,30 @@ router.setState = function(entry) {
 
   if (window.location.hash == "#settings"){
 
-    
-    document.querySelector('body').setAttribute("class", "settings"); 
     document.querySelector('h1').innerHTML = "Settings";
+    document.querySelector('body').setAttribute("class", "settings"); 
+    
   }
    
   else if (window.location.hash == ""){ 
 
-    
+    document.querySelector('h1').innerHTML = "Journal Entries";
     document.querySelector('body').setAttribute("class", "");  
-    document.querySelector('h1').innerHTML = "Journal Entries"
+    
   }
   
  
   else {
 
-    document.querySelector('body').setAttribute("class", "single-entry");
     document.querySelector('h1').innerHTML = "Entry " + entryNum(entry);
+    document.querySelector('body').setAttribute("class", "single-entry");
+    
 
 
     document.querySelector('entry-page').remove(); 
-    document.querySelector('body').appendChild(document.createElement('entry-page')); 
     document.querySelector('entry-page').entry = entry;
+    document.querySelector('body').appendChild(document.createElement('entry-page')); 
+    
   }
 
 }
