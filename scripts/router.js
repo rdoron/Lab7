@@ -69,7 +69,6 @@ function entryNum(entry){
   for(let i = 0; i < allEntries.length; i++){
     if(allEntries[i].entry.title == entry.title && allEntries[i].entry.date == entry.date && allEntries[i].entry.content == entry.content) {
       return i + 1; 
-      
     }
   }
 
