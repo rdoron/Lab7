@@ -53,9 +53,6 @@ router.setState = function(entry) {
 
     document.querySelector('h1').innerHTML = "Entry " + entryNum(entry);
     document.querySelector('body').setAttribute("class", "single-entry");
-    
-
-
     document.querySelector('entry-page').remove(); 
     document.querySelector('entry-page').entry = entry;
     document.querySelector('body').appendChild(document.createElement('entry-page')); 
