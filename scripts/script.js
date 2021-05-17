@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         newPost.addEventListener('click', () => {
         
-          window.history.pushState({page_id: 1, journalEntry: entry}, "entry", "#entry" + entryNum(entry)); 
+          window.history.pushState({page_id: 1, journalEntry: entry}, "JournalEntry", "#entry" + entryNum(entry)); 
           setState(entry); 
         });
       });
